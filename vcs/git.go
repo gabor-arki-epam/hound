@@ -81,7 +81,7 @@ func (g *GitDriver) Pull(dir string, configRef string) (string, error) {
 		"git",
 		"reset",
 		"--hard",
-		fmt.Sprintf("origin/%s", defaultRef)); err != nil {
+		fmt.Sprintf("origin/%s", ref)); err != nil {
 		return "", err
 	}
 
